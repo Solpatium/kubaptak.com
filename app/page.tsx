@@ -36,7 +36,7 @@ const LeftColumn = () => {
     <div className="lg:sticky top-0 flex flex-col md:flex-row lg:flex-col gap-[64px]">
       <div className="relative mb-[64px] shrink-0">
         <Image
-          src="/photo.png"
+          src="/photo.webp"
           alt="Kuba's photo"
           className="m-auto rounded-full border border-gray-900 h-auto"
           width={288}
@@ -83,7 +83,7 @@ const GreatResume = () => {
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between gap-[64px] max-w-[1400px] m-auto my-[48px] p-6">
+    <div className="flex flex-col lg:flex-row justify-between gap-[64px] max-w-[1400px] m-auto py-16 px-6 overflow-hidden">
       <LeftColumn />
       <main className="lg:max-w-[780px] w-full">
         <h2 className="text-[40px] font-serif mb-[32px]">My projects</h2>
