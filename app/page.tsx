@@ -39,8 +39,8 @@ const LeftColumn = () => {
           src="/photo.webp"
           alt="Kuba's photo"
           className="m-auto rounded-full border border-gray-900 h-auto max-w-[200px] md:max-w-[288px]"
-          width={1900}
-          height={1900}
+          width={288}
+          height={288}
           priority
         />
         {/* Big */}
