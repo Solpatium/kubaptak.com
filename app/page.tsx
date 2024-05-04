@@ -51,7 +51,7 @@ const LeftColumn = () => {
       <div className="flex flex-col gap-[32px] md:gap-[64px]">
         <header>
           <h1 className="text-[56px] xl:text-[80px] font-serif mb-[24px]">Hi! I&apos;m Kuba.</h1>
-          <p>I&apos;m a software engineer. I love web apps.</p>
+          <p>I&apos;m a software engineer based in <Link href="https://en.wikipedia.org/wiki/Krak%C3%B3w">Cracow</Link>. I love web apps.</p>
         </header>
         <footer>
           <p className="font-bold mb-[24px] flex flex-row justify-between items-center text-[16px] md:text-[20px]">Follow me on social media <a target="_blank" href="https://www.linkedin.com/in/jakub-ptak/"><LinkedInIcon /></a></p>
