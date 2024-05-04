@@ -66,10 +66,11 @@ const GreatResume = () => {
   return <article className="flex flex-col gap-[16px]">
     <h3 className="font-bold text-[24px]">Great Resume</h3>
     <Image
-      src="/greatresume.png"
+      src="/greatresume.webp"
       alt="Screenshot of greatresume.app"
-      width={1234}
-      height={1094}
+      className="border border-black"
+      width={1200}
+      height={630}
     />
     <p>
       Web app for creating resumes. Everything happens on client&apos;s side, there are no servers. To ensure UI responsiveness, all heavy lifting is done in web workers. One web worker generates a pdf using <Link href="react-pdf.org">react-pdf</Link>. The second one renders the pdf to canvas using <Link href="https://mozilla.github.io/pdf.js/">pdf.js</Link>.
