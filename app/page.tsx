@@ -5,7 +5,7 @@ const LinkButton: React.FC<{ children: string, href: string }> = (props) => {
 }
 
 const Link: React.FC<{ children: string, href: string }> = (props) => {
-  return <a className="underline" href={props.href}>{props.children}</a>
+  return <a className="underline font-bold" href={props.href}>{props.children}</a>
 }
 
 const Blob: React.FC<{ className: string, scale: number }> = ({ className, scale }) => {
@@ -50,11 +50,11 @@ const LeftColumn = () => {
       </div>
       <div className="flex flex-col gap-[32px] md:gap-[64px]">
         <header>
-          <h1 className="text-[56px] xl:text-[80px] font-serif mb-[24px]">Hi! I&apos;m Kuba.</h1>
-          <p>I&apos;m a software engineer based in <Link href="https://en.wikipedia.org/wiki/Krak%C3%B3w">Cracow</Link>. I love web apps.</p>
+          <h1 className="text-[56px] xl:text-[80px] font-serif mb-[12px]">Hi! I&apos;m Kuba.</h1>
+          <p>I&apos;m a software engineer based in Cracow. I enjoy learning new stuff and working on cool web apps.</p>
         </header>
         <footer>
-          <p className="font-bold mb-[24px] flex flex-row justify-between items-center text-[16px] md:text-[20px]">Follow me on social media <a target="_blank" href="https://www.linkedin.com/in/jakub-ptak/"><LinkedInIcon /></a></p>
+          <p className="font-bold mb-[24px] flex flex-row justify-between lg:justify-start gap-4 items-center text-[16px] md:text-[20px]">Follow me on social media <a target="_blank" href="https://www.linkedin.com/in/jakub-ptak/"><LinkedInIcon /></a></p>
           <LinkButton href="mailto:contact@kubaptak.com">Contact me</LinkButton>
         </footer>
       </div>
@@ -74,11 +74,9 @@ const GreatResume = () => {
     />
     <p>
       Web app for creating resumes. Everything happens on client&apos;s side, there are no servers. To ensure UI responsiveness, all heavy lifting is done in web workers. One web worker generates a pdf using <Link href="react-pdf.org">react-pdf</Link>. The second one renders the pdf to canvas using <Link href="https://mozilla.github.io/pdf.js/">pdf.js</Link>.
-      <br />During export, resume&apos;s model is embeded in the pdf, making it possible to import it back to the app without any OCR, pretty cool.
+    </p><p>During export, resume&apos;s model is embeded in the pdf, making it possible to import it back to the app without any OCR, pretty cool.
     </p>
-    <div className="text-right mt-4">
-      <LinkButton href="greatresume.app">See greatresume.app</LinkButton>
-    </div>
+    <Link href="greatresume.app">See greatresume.app</Link>
   </article>
 }
 
