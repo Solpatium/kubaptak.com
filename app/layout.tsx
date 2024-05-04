@@ -27,7 +27,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <body className={`${play.variable} ${anonymous.variable} ${anonymous.className}`}>{children}</body>
+      <body className={`${play.variable} ${anonymous.variable} ${anonymous.className} text-[14px] md:text-[20px]`}>{children}</body>
     </html>
   );
 }
